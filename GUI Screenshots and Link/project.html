@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<meta charset="utf-8"/>
+      <title>MasterOwl Comics</title>
+   </head>
+   <body>
+        <img src="masterowl.png" alt="MasterOwl Comics"> 
+   
+   <form method="post" action="./addItemOrder.php">
+  <fieldset>
+        	<legend style="color:blue;font-size:30px">Place an Order</legend>
+            <label for="orderid">Order ID:</label>
+        	<input type="text" name="orderid" id="orderid">
+			<label for="itemid">Item ID:</label>
+            <input type="text" name="itemid" id="itemid">
+            <label for="customerid">Customer ID:</label>
+        	<input type="text" name="customerid" id="customerid"><br></br>
+            <label for="orderdate">Order Date (format: DD-MMM-YY):</label>
+        	<input type="text" name="orderdate" id="orderdate"><br></br>
+            <label for="numberordered">Number Ordered:</label>
+            <input type="text" name="numberordered" id="numberordered"><br></br>
+            <label for="shippeddate">Shipped Date (format: DD-MMM-YY):</label>
+        	<input type="text" name="shippeddate" id="shippeddate">
+   </fieldset>
+            <input type="submit" value="Submit">
+        	<input type="reset" value="Reset">
+ </form>
+ <form method="post" action="./shipDate.php">
+    <fieldset>
+              <legend style="color:blue;font-size:30px">Set a Date for Shipment</legend>
+              <label for="orderid">Order ID:</label>
+              <input type="text" name="orderid" id="orderid"><br></br>
+              <label for="shippeddate">Shipped Date (format: DD-MMM-YY):</label>
+              <input type="text" name="shippeddate" id="shippeddate">
+     </fieldset>
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+   </form>
+   <form method="post" action="./projectweb.php">
+    <fieldset>
+              <legend style="color:blue;font-size:30px">View Orders</legend>
+              <label for="customerid">Customer ID:</label>
+              <input type="text" name="customerid" id="customerid"><br></br>
+              <label for="somedate">Check for Dates after (format: DD-MMM-YY):</label>
+              <input type="text" name="somedate" id="somedate">
+     </fieldset>
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+   </form>
+   </body>
+</html>
+
+
+
